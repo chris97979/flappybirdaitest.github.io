@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Il mio gioco</title>
+  <style>
+    /* Imposta l'altezza della pagina a 100% */
+    html, body {
+      height: 100%;
+    }
+
+    /* Imposta il background a nero */
+    body {
+      background-color: black;
+    }
+
+    /* Imposta il contenitore del gioco al centro dello schermo */
+    #game-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    /* Imposta le dimensioni dell'iframe del gioco */
+    #game {
+      width: 720px;
+      height: 1280px;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <iframe id="game" src="game.html"></iframe>
+  </div>
+</body>
+</html>
