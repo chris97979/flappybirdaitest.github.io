@@ -24,8 +24,11 @@
 
     /* Imposta le dimensioni dell'iframe del gioco */
     #game {
-      width: 720px;
-      height: 1280px;
+      aspect-ratio: 9 / 16; /* Imposta il rapporto di aspetto a 9:16 */
+      width: 90vw; /* Imposta la larghezza in base alla percentuale della viewport width */
+      height: 90vh; /* Imposta l'altezza in base alla percentuale della viewport height */
+      max-width: 720px; /* Imposta la larghezza massima a 720px */
+      max-height: 1280px; /* Imposta l'altezza massima a 1280px */
     }
   </style>
 </head>
