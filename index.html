@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Il mio gioco</title>
-  <style>
-    /* Imposta l'altezza della pagina a 100% */
-    html, body {
-      height: 100%;
-    }
-
-    /* Imposta il background a nero */
-    body {
-      background-color: black;
-    }
-
-    /* Imposta il contenitore del gioco al centro dello schermo */
-    #game-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-
-    /* Imposta le dimensioni dell'iframe del gioco */
-    #game {
-      aspect-ratio: 9 / 16; /* Imposta il rapporto di aspetto a 9:16 */
-      width: 90vw; /* Imposta la larghezza in base alla percentuale della viewport width */
-      height: 90vh; /* Imposta l'altezza in base alla percentuale della viewport height */
-      max-width: 360px; /* Imposta la larghezza massima a 720px */
-      max-height: 640px; /* Imposta l'altezza massima a 1280px */
-    }
-  </style>
-</head>
-<body>
-  <div id="game-container">
-    <iframe id="game" src="game.html"></iframe>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Il mio gioco HTML5</title>
+    <style>
+      #game-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 562.5px; /* 9:16 aspect ratio */
+        height: 100vh;
+        max-height: 1000px; /* adjust as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container">
+      <iframe src="game.html" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </body>
 </html>
-
